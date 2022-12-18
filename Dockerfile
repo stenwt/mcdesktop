@@ -1,4 +1,4 @@
-FROM linuxserver/rdesktop:ubuntu-mate
+FROM linuxserver/rdesktop:ubuntu-mate-version-a1cb264c
 RUN curl -LO https://github.com/LizardByte/Sunshine/releases/download/v0.16.0/sunshine-22.04.deb
 RUN apt update && apt install -y  libva2 libva-drm2 libnuma1 libvdpau1 ./sunshine-22.04.deb 
 RUN usermod -aG input abc
